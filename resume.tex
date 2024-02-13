@@ -1,0 +1,73 @@
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[9pt, letterpaper]{russell}
+
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=0.5cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% russell Colors: russell-emerald, russell-skyblue, russell-red, russell-pink, russell-orange
+%                 russell-nephritis, russell-concrete, russell-darknight, russell-purple
+\colorlet{russell}{russell-black}
+
+% Uncomment if you would like to specify your own color
+% \definecolor{russell}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with russell color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{\LARGE {\bf SHAHEER}}{\LARGE}
+\position{Software Engineer{\enskip\cdotp\enskip}Backend Developer}
+
+\address{Mangalore}
+\mobile{+91 (779) 555 5313}
+\email{shaheer2511@outlook.com}
+\dateofbirth{Novermber 25th, 2001}
+\github{github.com/Shaheer25}
+\linkedin{linkedin.com/in/shaheer-67332b243/}
+% \quote{``Backend Developer with close to a year of experience in coding, debugging and deploying backend projects."}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+
+\makecvheader
+\input{cv/summary}
+\input{cv/experience.tex}
+\input{cv/education.tex}
+\input{cv/skills.tex}
+% \input{cv/projects.tex}
+% \input{cv/Competitions.tex}
+\input{cv/certificates.tex}
+% \input{cv/achievements.tex}
+\input{cv/languages.tex}
+
+\vspace*{-1cm}%\fill}
+%-------------------------------------------------------------------------------
+\end{document}
